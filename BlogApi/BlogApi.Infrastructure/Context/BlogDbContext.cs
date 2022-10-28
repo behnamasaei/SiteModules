@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BlogApi.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogApi.Infrastructure.Context
 {
-    public class BlogDbContext
+    public class BlogDbContext : DbContext
     {
+        public BlogDbContext(DbContextOptions<BlogDbContext> options) : base(options)
+        {
+
+        }
+
+        public virtual DbSet<Post> Posts { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

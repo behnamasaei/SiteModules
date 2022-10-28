@@ -1,0 +1,17 @@
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\BlogApi.Infrastructure.deps.json
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\BlogApi.Infrastructure.runtimeconfig.json
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\BlogApi.Infrastructure.dll
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\ref\BlogApi.Infrastructure.dll
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\BlogApi.Infrastructure.pdb
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\BlogApi.Domain.dll
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\bin\Debug\net6.0\BlogApi.Domain.pdb
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.csproj.AssemblyReference.cache
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.AssemblyInfoInputs.cache
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.AssemblyInfo.cs
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.csproj.CoreCompileInputs.cache
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.csproj.CopyComplete
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.dll
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\ref\BlogApi.Infrastructure.dll
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.pdb
+I:\SiteModules\BlogApi\BlogApi.Infrastructure\obj\Debug\net6.0\BlogApi.Infrastructure.genruntimeconfig.cache
