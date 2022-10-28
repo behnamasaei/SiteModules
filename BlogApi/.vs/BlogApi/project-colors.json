@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dc9454ce-c5a6-4907-8cf3-f0bc704ffd00": {
+      "ProjectGuid": "dc9454ce-c5a6-4907-8cf3-f0bc704ffd00",
+      "DisplayName": "BlogApi.Host",
+      "ColorIndex": 0
+    },
+    "bf4b20fa-14f2-40df-a295-730ebfe05b41": {
+      "ProjectGuid": "bf4b20fa-14f2-40df-a295-730ebfe05b41",
+      "DisplayName": "BlogApi.Domain",
+      "ColorIndex": 1
+    },
+    "17531eb9-e1f6-4d20-8037-0f7a8846a9a1": {
+      "ProjectGuid": "17531eb9-e1f6-4d20-8037-0f7a8846a9a1",
+      "DisplayName": "BlogApi.Infrastructure",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
