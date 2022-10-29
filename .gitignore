@@ -7,3 +7,5 @@ BlogApi/BlogApi.Domain/obj
 BlogApi/BlogApi.Host/bin/Debug/net6.0
 BlogApi/BlogApi.Host/obj
 BlogApi/BlogApi.Infrastructure/bin/Debug
+BlogApi/BlogApi.Application/bin/Debug
+BlogApi/BlogApi.Infrastructure/obj/Debug/net6.0
