@@ -10,12 +10,12 @@ namespace BlogApi.Domain.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetPosts();
-        Task<T> GetPostById(Guid id);
-        Task<T> GetPostByName(string name);
-        Task<HttpResponse> AddPost(T entity);  
-        Task<HttpResponse> DeletePost(T entity);
-        Task<HttpResponse> UpdatePost(T entity);
+        Task<IEnumerable<T>> GetAll();
+        Task<T> GetById(Guid id);
+        Task<T> GetByName(string name);
+        Task<bool> Add(T entity);  
+        Task<bool> Delete(Guid id);
+        Task<bool> Update(T entity);
         Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate);
     }
 }

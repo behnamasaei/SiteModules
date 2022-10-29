@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogApi.Infrastructure.Migrations
 {
     [DbContext(typeof(BlogDbContext))]
-    [Migration("20221028133602_initialMigration")]
-    partial class initialMigration
+    [Migration("20221029153524_add_parrent_to_Cateogry")]
+    partial class add_parrent_to_Cateogry
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,9 @@ namespace BlogApi.Infrastructure.Migrations
                     b.Property<bool>("Active")
                         .HasColumnType("bit");
 
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Path")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -43,7 +46,9 @@ namespace BlogApi.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CategoryPost");
+                    b.HasIndex("ParentId");
+
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("BlogApi.Domain.Models.Post", b =>
@@ -105,7 +110,17 @@ namespace BlogApi.Infrastructure.Migrations
 
                     b.HasIndex("PostId");
 
-                    b.ToTable("Tag");
+                    b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("BlogApi.Domain.Models.CategoryPost", b =>
+                {
+                    b.HasOne("BlogApi.Domain.Models.CategoryPost", "Parent")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Parent");
                 });
 
             modelBuilder.Entity("BlogApi.Domain.Models.Post", b =>
@@ -124,6 +139,11 @@ namespace BlogApi.Infrastructure.Migrations
                     b.HasOne("BlogApi.Domain.Models.Post", null)
                         .WithMany("Tags")
                         .HasForeignKey("PostId");
+                });
+
+            modelBuilder.Entity("BlogApi.Domain.Models.CategoryPost", b =>
+                {
+                    b.Navigation("Children");
                 });
 
             modelBuilder.Entity("BlogApi.Domain.Models.Post", b =>

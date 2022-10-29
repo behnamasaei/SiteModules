@@ -1,4 +1,6 @@
+using BlogApi.Domain.Interfaces;
 using BlogApi.Infrastructure.Context;
+using BlogApi.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,9 @@ builder.Services.AddDbContext<BlogDbContext>(options =>
         b => b.MigrationsAssembly("BlogApi.Infrastructure"));
     
 });
+
+// DI Containers
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
